@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="Dashboard">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Login In</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <script type="text/javascript" src="JS/bootstrap.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="JS/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="JS/app.js"></script>
+
+    <script type="text/javascript" language="JavaScript">
+        function clickedButton() {
+
+            window.location = 'Creator/index.html'
+
+        }
+        function ConsumerclickedButton() {
+
+            window.location = 'Consumer/index.html'
+
+        }
+    </script>
+
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--Header-->
+        <div class="row align-items-start">
+            <div class="col-2"></div>
+            <style>
+                body {
+                    background-color: bisque
+                }
+            </style>
+            <div class="col-8" style="text-align: center;">
+                <h3>Sign In</h3>
+            </div>
+
+            <div class="col-2"></div>
+        </div>
+
+        <!--New Asset Box-->
+        <div class="row align-items-start">
+            <div class="col-2"></div>
+
+            <div class="col-8" style="text-align: left;border-bottom:1px solid #222222;">
+               
+                <form style="font-size: 10pt;" id="UserID" name="myForm"  method="post">
+
+
+                    <div class="mb-3">
+                        <label for="EmailAddress" class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" id="EmailAddress" name="emailAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password *</label>
+                        <input type="password" class="form-control" id="Password">
+                    </div>
+                    <!--// <button type="submit" id="SignIn" class="btn btn-primary">Sign In</button> <br /><br />-->
+
+                        <input type="button" value="Creator Login" onClick="clickedButton()" />
+                        <input type="button" value="Consumer Login" onClick="ConsumerclickedButton()" />
+                    
+                </form>
+            </div>
+
+            <div class="col-2"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
